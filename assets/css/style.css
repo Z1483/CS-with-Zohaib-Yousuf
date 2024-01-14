@@ -1241,7 +1241,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .clients-item { min-width: calc(33.33% - 10px); }
 
-
+  #certification-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   /**
    * #PORTFOLIO, BLOG 
@@ -1539,6 +1544,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .form-btn ion-icon { font-size: 18px; }
 
+  #certification-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
 }
 
 
@@ -1637,6 +1649,17 @@ textarea.form-input::-webkit-resizer { display: none; }
   .form-btn {
     width: max-content;
     margin-left: auto;
+  }
+    #certification-content {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #certification-content img{
+    width:250px;
+    margin-bottom: auto;
   }
   
 }
