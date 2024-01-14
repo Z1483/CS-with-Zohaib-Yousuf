@@ -1232,6 +1232,17 @@ textarea.form-input::-webkit-resizer { display: none; }
 /**
  * responsive larger than 450px screen
  */
+@media (min-width: 320px){
+  .sidebar-info{
+    display: flex;
+    flex-direction: row;
+   }
+   .sidebar-info img{
+      width: 100px;
+      height: 90px;
+   }
+
+}
 
 @media (min-width: 450px) {
 
@@ -1566,6 +1577,13 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
    * REUSED STYLE
    */
+   .sidebar-info{
+
+   }
+   .sidebar-info img{
+      width: 100px;
+      height: 100px;
+   }
 
   .sidebar, article { width: 700px; }
 
@@ -1788,7 +1806,14 @@ textarea.form-input::-webkit-resizer { display: none; }
  */
 
 @media (min-width: 1250px) {
-
+  .sidebar-info{
+    display: flex;
+    flex-direction: row;
+   }
+   .sidebar-info img{
+      width: 100px;
+      height: 140px;
+   }
   /**
    * RESET
    */
