@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Zohaib Yousuf</h1>
+
+          <p class="title">Cambridge Coach</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:zohaibyousuf789@gmail.com" class="contact-link">zohaibyousuf789@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="whatsapp://send?phone=+923273652183" class="contact-link">+92 32 7365 2183</a>
+            </div>
+
+          </li>
+
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info" onclick="sendMessageToWhatsApp()">
+              <p class="contact-title">Chat on WhatsApp</p>
+
+              <address>Click Here</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="whatsapp://send?phone=+923273652183" class="social-link">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/zohaib-yousuf/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/zohaib_yousuf789/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>Certifications</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Past Papers</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p style="text-align: justify;">
+            I am Zohaib Yousuf 🙋‍♂️, your mentor for O/A Level Computer Science💻, boasting several years of teaching experience. Holding a degree from <b style="color: #FFDB70;">Fast Nuces</b>, Karachi, I bring extensive expertise to simplify your A-level journey 📚. Apart from academic achievements, I have distinguished myself in real-world problem-solving, securing a gold medal 🥇 at the <b style="color: #FFDB70;">ICPC Regionals (Computer Olympics).</b>
+         </p>
+          <p>Additionally, I was privileged to receive a scholarship from <b style="color: #FFDB70;">Astera</b>, further enhancing my dedication to delivering quality education.
+            My leadership roles at ACM 🤴 solidify my dedication to fostering genuine learning and growth. Let's connect and explore the world of A-level Computer Science together.
+          </p>
+        </section>
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Rayan Ali</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Sir Zohaib is Truly Exceptional and a Mind Boggling Teacher Masha Allah ! Through his Guidance,
+                    Mentorship and Learning Techniques I was able to go from a U to an A in a very short amount of Time.
+                    Just in Short online consultation, he would help you immensely.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Yumna Zaidi</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I was really struggling with my Studies and Time Management I was not using the updated learning
+                    mathods and techniques such as Pomodoro Technique, 80-20 Rule, Feynman Method, and Eat the Frog.
+                    These were some of the Learning Methods which Sir Zohaib shared with me and Alhumdulilah through the
+                    use of these Teachniques, my Studies had a Drastic Positive effect ! All thanks to Sir Zohaib
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Nawfal</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Mr. Zohaib is genuinely outstanding and an astonishing teacher, Masha Allah! Under his mentorship
+                    and instructional methods, I quickly transitioned from a U to an A grade. Even with brief online
+                    sessions, his guidance proves immensely beneficial.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Ali</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Under the guidance of Mr. Zohaib, I experienced a transformative learning journey, Alhamdulillah!
+                    His unparalleled teaching skills and mentorship not only boosted my grades from a U to an A swiftly
+                    but also enriched my overall academic experience. His brief online consultations are profoundly
+                    impactful and beneficial.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mentorship</h4>
+
+                <p class="service-item-text">
+                  I train pupils with latest Learning techniques and methods.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Online Tutor</h4>
+
+                <p class="service-item-text">
+                  Seamless learning, wherever you log in from
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Counselling</h4>
+
+                <p class="service-item-text">
+                  I mentor young minds to aim higher.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Rayan Ali</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">National University of Computer and Emerging Sciences - FAST</h4>
+
+              <span>2019 — 2023</span>
+
+              <p class="timeline-text">
+                I have completed my Bachelors in Computer Science from FAST-NUCES Karachi.
+              </p>
+
+            </li>
+
+            <!-- <1 -->
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <a href="https://www.freit.io/"><h4 class="h4 timeline-item-title">Friet.io</h4></a>
+
+              <span>2021 — Present</span>
+
+              <p class="timeline-text">
+                Working as a Software Engineer at Friet.io where I am working on the development of a web application for the company. I am working on the frontend of the application using React.js and Typescript. I am also working on the backend of the application using Node.js and Express.js.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Astera Softwares</h4>
+
+              <span>2020 — 2023</span>
+
+              <p class="timeline-text">
+                Brand ambassador at Astera where I worked on the promotion of the company. I also worked on the awareness of the company and its products. 
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Ibex Digital</h4>
+
+              <span>2020 — 2021</span>
+
+              <p class="timeline-text">
+                Worked as a Software Engineer at Ibex where I worked on the development of a web application for the company. I worked on the frontend of the application using React.js and Typescript. I also worked on the backend of the application using Node.js and Express.js.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+       
+      </article>
+
+
+
+
+
+      <!--
+        - #CERTIFICATIONS
+      -->
+
+      <article class="certifications active" data-page="certifications">
+
+        <header>
+          <h2 class="h2 article-title">Certifications</h2>
+        </header>
+
+        <section class="projects">
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value></div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+
+
+          </div>
+
+          
+
+          <ul style="display: flex; flex-direction: column; gap: 25px;">
+  
+            <li>
+
+              <div class="h3 service-title"> 
+                Astera Scholarship 🏆
+              </div>
+
+              <div style="display: flex; flex-direction: column; gap: 20px;">
+
+                <img src="./assets/images/certificate-1.PNG" style="height: 300px; width: fit-content; border-radius: 25px;"></img>
+  
+                <p class="about-text" style="text-align: justify;">Proudly served as the Brand Ambassador for Astera, showcasing dedication and commitment to promoting the brand's values and vision. Additionally, I was honored to be recognized with a scholarship from Astera, further cementing our collaborative journey towards excellence. Grateful for the opportunities and experiences that have shaped my professional growth. #BrandAmbassador #Astera #ScholarshipRecipient
+                </p>
+  
+              </div>
+              
+            </li>
+
+            <li>
+
+              <div class="h3 service-title">
+                ICPC Regionals Gold Medal 🥇
+              </div>
+
+              <div style="display: flex; flex-direction: column; gap: 5%;">
+
+                <img src="./assets/images/icpc.jpg" style="height: 300px; width: fit-content; border-radius: 25px;"></img>
+  
+                <p class="about-text" style="text-align: justify;">I won the gold medal at the ICPC Regionals, a testament to dedication, teamwork, and problem-solving prowess. This achievement stands as a significant milestone in my academic and professional journey. Eager to continue pushing boundaries and contributing meaningfully to the tech community. #ICPCRegionals #GoldMedalist</p>
+  
+              </div>
+              
+            </li>
+  
+            
+          </ul>
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="https://www.youtube.com/watch?v=3E7hkPZ-HTk">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Ted Talks</p>
+
+                    <span class="dot"></span>
+
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Quit social media | Dr. Cal Newport | TEDxTysons</h3>
+
+                  <p class="blog-text">
+                    How Social Media is Destroying You.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://www.youtube.com/watch?v=tkm0TNFzIeg">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Sprouts</p>
+
+                    <span class="dot"></span>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The Feynman Technique</h3>
+
+                  <p class="blog-text">
+                    Richard Feynman was a physicist who received a Nobel prize for his work in quantum electrodynamics
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://www.youtube.com/watch?v=3Km5XPvQghA">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Pomodoro Technique</h3>
+
+                  <p class="blog-text">
+                    The Pomodoro Technique is one of my favorite ways to beat procrastination and maintain productivity and focus. The pomodoro technique utilizes alternating study and break times of 25 and 5 minutes, respectively.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://www.youtube.com/watch?v=EAynHZE-lK4">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Better Than Yesterday</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Have you ever been interested in becoming more productive or managing your time better? 
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="past papers">
+
+        <header>
+          <h2 class="h2 article-title">Past Papers</h2>
+        </header>
+
+        
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">AS/A Levels Computer Science 9618</h3>
+
+            <ul class="blog-posts-list">
+
+              <li class="blog-post-item">
+                <a onclick="sendMessageToWhatsApp()" >
+                  <figure class="blog-banner-box">
+                    <img src="./assets/images/p1.png" alt="Design conferences in 2022" loading="lazy" >
+                  </figure>
+  
+                </a>
+              </li>
+  
+              <li class="blog-post-item">
+                <a onclick="sendMessageToWhatsApp()" >
+  
+                  <figure class="blog-banner-box">
+                    <img src="./assets/images/p2.png" alt="Best fonts every designer" loading="lazy">
+                  </figure> 
+  
+                </a>
+              </li>
+  
+              <li class="blog-post-item">
+                <a onclick="sendMessageToWhatsApp()" >
+  
+                  <figure class="blog-banner-box">
+                    <img src="./assets/images/P3.png" alt="Design digest #80" loading="lazy">
+                  </figure>
+
+                </a>
+              </li>
+  
+              <li class="blog-post-item">
+                <a onclick="sendMessageToWhatsApp()" >
+  
+                  <figure class="blog-banner-box">
+                    <img src="./assets/images/P4.png" alt="UI interactions of the week" loading="lazy">
+                  </figure>
+
+                </a>
+              </li>
+  
+  
+            </ul>
+
+        </section>
+
+      </article>
+
+    </div>
+
+<!--           
+      <div id="myPopup" class="popup" style="position: fixed ;display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 6px; background-color: #ffffff; z-index: 10; border-radius: 25px;">
+        <button style="color: white; z-index: 10;background-color: red; height: fit-content; width: fit-content ; border-radius: 15px; padding: 5px; margin-left: auto; padding-right: 20px; padding-left: 20px;" id="popup-trigger">Cancel</button>
+        <div style="display: flex; justify-content: center; align-items: center ;flex-direction: column; padding: 0 25px; ">
+            <h2 style="font-size: 42px; font-weight: bold; color: #2c3e50;">Connect With Me on WhatsApp</h2>
+            <img src="./assets/images/avatar-1.png" alt="whatsapp" style="justify-content: center; max-width: 300px;height: 250px; margin-top: 20px; border-radius: 25px;">
+            <a href="whatsapp://send?phone=+923273652183" style="margin-top: 15px; display: inline-block; width: 100%; border-radius: 4px; background-color: #00A884; padding: 10px 25px; font-weight: bold; color: #ffffff; text-decoration: none; text-align: center; box-shadow: 0 4px 6px rgba(60, 80, 200, 0.2); transition: background-color 0.3s ease-in-out;" onmouseover="this.style.backgroundColor='#00FF5C'" onmouseout="this.style.backgroundColor='#00A884'">WhatsApp Me 👋</a>
+        </div>
+      </div> -->
+
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    // Function to show the pop-up
+    function showPopup() {
+      document.getElementById('myPopup').style.display = 'block';
+    }
+
+    // Function to hide the pop-up
+    function hidePopup() {
+      document.getElementById('myPopup').style.display = 'none';
+    }
+
+    // Set interval to show the pop-up every 2 minutes
+    setInterval(showPopup, 1000); // 2 minutes in milliseconds
+
+    // Close pop-up when clicking outside the content
+    document.getElementById('myPopup').addEventListener('click', function (event) {
+      if (event.target === this) {
+        hidePopup();
+      }
+    });
+
+    // Optional: Close pop-up when clicking the trigger button
+    document.getElementById('popup-trigger').addEventListener('click', hidePopup);
+
+
+    
+function sendMessageToWhatsApp() {
+    // Specify the phone number and message
+    var phoneNumber = '+923273652183'; // Replace with the recipient's phone number
+    var message = 'Salam Zohaib Sir, can you share the past papers with me ?'; // Your predefined message
+    
+    // Create the WhatsApp URL
+    var whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    
+    // Open WhatsApp in a new tab
+    window.open(whatsappURL, '_blank');
+}
+
+
+  </script>
+</body>
+
+</html>
